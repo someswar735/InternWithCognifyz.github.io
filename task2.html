@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-2</title>
+    <style>
+        body{
+            background: linear-gradient(45deg, #0cb017, #ffffff);
+
+        }
+        #colorChangeButton {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    
+       .card-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(deg, #089746, #ffffff);
+        }
+
+        /* Style for the card */
+        .card {
+            width: 250px;
+            height: 250px;
+            background: linear-gradient(45deg, #f08018, #ffffff);
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 20px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        /* Style for the button */
+        #colorChangeButton {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Hover button */
+        #colorChangeButton:hover {
+            background-color: #0056b3;
+        }
+         /* Hover card */
+         .card:hover {
+            transform: scale(2.05);
+        }
+
+/*style for calculator*/
+        .card {
+            width: 300px;
+            height: 300px;
+            padding: 20px;
+            border: 2px solid #333;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        #result {
+            font-size: 24px;
+            margin-bottom: 10px;
+            text-align: right;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+
+        .button {
+            width: 50px;
+            height: 50px;
+            font-size: 20px;
+            margin: 5px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+        }
+
+        #equals {
+            background-color: #ea1212;
+        }
+
+        .button:hover {
+            background-color: #093563;
+        }
+    </style>
+</head>
+<body>
+    <div class="title-bar">
+        <a href="task2.html" target="_blank" class="title-link">Home</a>
+        <a href="https://www.linkedin.com/company/cognifyz-techonologies/" target="_blank" class="title-link">LinkedIn</a>
+        <a href="https://www.instagram.com/cognifyz_tech/" target="_blank" class="title-link">Instagram</a>
+    
+        <a href="https://www.cognifyz.com/" target="_blank" class="title-link">Official Site</a>
+    </div>
+    <h1 style="color: color-mix(in srgb, blue 50%, rgb(77, 214, 77) 50%);">____________________________________________________________________________________________</h1>
+    <h1 style="color: color-mix(in srgb, blue 50%, rgb(77, 214, 77) 50%);">________________________Welcome To Cognifyz Web Development Intership_________________________</h1>
+
+    <style>
+        .title-bar {
+    background-color: #f08018; 
+    padding: 30px 0;
+    text-align: center; 
+}
+
+.title-link {
+    text-decoration: none;
+    color: #fff; 
+    margin: 0 100px; 
+    font-size: 18px; 
+    font-weight: bold; 
+    transition: color 0.3s ease; 
+}
+
+.title-link:hover {
+    color: #0d55f0; 
+}
+    </style>
+    <div class="card-container">
+        <div class="card">
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>click the button.</h2>
+            <button id="colorChangeButton">Change Color</button>
+        </div>
+        <div class="card">
+            <br>
+            <br>
+            <br>
+            <br>
+            <h1>🤩</h1>
+        </div>
+
+        <div class="card">
+            <div id="result">0</div>
+            <button class="button" onclick="appendToResult('7')">7</button>
+            <button class="button" onclick="appendToResult('8')">8</button>
+            <button class="button" onclick="appendToResult('9')">9</button>
+            <button class="button" onclick="appendToResult('+')">+</button>
+            <button class="button" onclick="appendToResult('4')">4</button>
+            <button class="button" onclick="appendToResult('5')">5</button>
+            <button class="button" onclick="appendToResult('6')">6</button>
+            <button class="button" onclick="appendToResult('-')">-</button>
+            <button class="button" onclick="appendToResult('1')">1</button>
+            <button class="button" onclick="appendToResult('2')">2</button>
+            <button class="button" onclick="appendToResult('3')">3</button>
+            <button class="button" onclick="appendToResult('*')">*</button>
+            <button class="button" onclick="appendToResult('0')">0</button>
+            <button class="button" id="equals" onclick="calculateResult()">=</button>
+            <button class="button" onclick="appendToResult('/')">/</button>
+            <button class="button" onclick="clearResult()">C</button>
+        </div>
+
+       
+
+        </div>
+       <h1 style="color: color-mix(in srgb, blue 50%, rgb(77, 214, 77) 50%);">____________________________________________________________________________________________</h1>
+        <h1 style="color: color-mix(in srgb, blue 50%, rgb(77, 214, 77) 50%);">______________________________________Level-1 : Task-2 _______________________________________</h1>
+        
+        <script>
+            let result = document.getElementById("result");
+    
+            function appendToResult(value) {
+                if (result.textContent === '0') {
+                    result.textContent = value;
+                } else {
+                    result.textContent += value;
+                }
+            }
+    
+            function calculateResult() {
+                try {
+                    result.textContent = eval(result.textContent);
+                } catch (error) {
+                    result.textContent = "Error";
+                }
+            }
+    
+            function clearResult() {
+                result.textContent = '0';
+            }
+        </script>
+    
+    <script>
+        // Get a reference to the button element
+        const button = document.getElementById('colorChangeButton');
+
+        // Function to change the button's color
+        function changeColor() {
+            // Generate a random color in hex format
+            const randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+            
+            // Set the button's background color to the random color
+            button.style.backgroundColor = randomColor;
+        }
+
+        // Add a click event listener to the button
+        button.addEventListener('click', changeColor);
+    </script>
+    
+    <script>
+        // Get the current time
+        var currentTime = new Date();
+        var currentHour = currentTime.getHours();
+
+        // Initialize a variable for the greeting message
+        var greetingMessage;
+
+        // Determine the greeting message based on the current hour
+        if (currentHour >= 5 && currentHour < 12) {
+            greetingMessage = "Good morning!";
+        } else if (currentHour >= 12 && currentHour < 18) {
+            greetingMessage = "Good afternoon!";
+        } else {
+            greetingMessage = "Good evening!";
+        }
+
+        // Display the greeting message in an alert box
+        alert(greetingMessage);
+        
+    </script>
+</body>
+</html>
