@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+  <title>Level2-Task1.1</title>
+  <style>
+    /* Custom styles */
+    .custom-card {
+      max-width: 400px;
+      background: linear-gradient(45deg, #f08018, #0d55f0);
+      transition: transform 0.3s; /* Add a transition effect */
+      margin: 0 auto; /* Center horizontally */
+      margin-top: 20px; /* Add top margin to center vertically */
+    }
+
+    .custom-card:hover {
+      transform: scale(1.05); /* Apply a scale effect on hover */
+    }
+
+    .custom-card img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    body {
+      /* Add a background gradient to the entire webpage */
+      background: linear-gradient(45deg, #f08018, #0d55f0);
+    }
+
+    .title-bar {
+      background-color: transparent; /* Remove background color from title bar */
+      padding: 30px 0;
+      text-align: center;
+    }
+
+    .title-link {
+      text-decoration: none;
+      color: #fff;
+      margin: 0 100px;
+      font-size: 18px;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    .title-link:hover {
+      color: #0d55f0;
+    }
+
+    /* Add custom styles for the footer button */
+    .footer-button {
+      text-align: center;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="title-bar">
+    <a href="index.html" target="_blank" class="title-link">Home</a>
+    <a href="https://www.linkedin.com/company/cognifyz-techonologies/" target="_blank" class="title-link">LinkedIn</a>
+    <a href="https://www.instagram.com/cognifyz_tech/" target="_blank" class="title-link">Instagram</a>
+    <a href="https://www.cognifyz.com/" target="_blank" class="title-link">Official Site</a>
+  </div>
+  <section class="section">
+    <div class="container">
+      <!-- Add a title and subtitle using Bulma classes -->
+      <h1 class="title is-1 has-text-centered">Welcome to cognifyz web developer internship</h1>
+      <br>
+      <h2 class="subtitle is-3 has-text-white has-text-centered">Level2-Task1 using Bulma css</h2>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-half">
+        <div class="card custom-card">
+          <!-- Remove the <figure> and <img> elements if you don't want an additional image inside the card -->
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="./Bulma.png" alt="Card Image">
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-content">
+                <p class="title is-4">Bulma</p>
+              </div>
+            </div>
+
+            <div class="content">
+              Bulma is a free, open-source framework that provides ready-to-use frontend components that you can easily combine to build responsive web interfaces
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Button using Bulma styles -->
+  <div class="footer-button">
+    <a href="Level2-Task1.2.html" target="_blank">
+    <button class="button is-primary">Next</button>
+  </a>  </div>
+</body>
+</html>

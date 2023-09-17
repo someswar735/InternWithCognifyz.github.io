@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Level2-Task1.2</title>
+    <style>
+        body {
+            /* Set background gradient to cover the entire viewport */
+            background: linear-gradient(45deg, #FFC107, #0154e2);
+            margin: 0; /* Remove default margin to fill the viewport */
+            padding: 0; /* Remove default padding */
+            font-family: Arial, sans-serif; /* Use a common sans-serif font */
+        }
+
+        /* Header styles */
+        .title-bar {
+            background: linear-gradient(45deg, #FFC107, #0154e2);
+            padding: 10px 0;
+            text-align: center;
+            color: #fff;
+        }
+
+        .title-link {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 20px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .title-link:hover {
+            color: #0d55f0;
+        }
+
+        /* Container styles */
+        .container {
+            padding: 20px;
+        }
+
+        /* Card styles */
+        .card {
+            background-color: #fff;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        /* Card image styles */
+        .card-img-top {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        /* Card title and text styles */
+        .card-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .card-text {
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="title-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <a href="index.html" target="_blank" class="title-link">Home</a>
+                </div>
+                <div class="col-md-3">
+                    <a href="https://www.linkedin.com/company/cognifyz-techonologies/" target="_blank" class="title-link">LinkedIn</a>
+                </div>
+                <div class="col-md-3">
+                    <a href="https://www.instagram.com/cognifyz_tech/" target="_blank" class="title-link">Instagram</a>
+                </div>
+                <div class="col-md-3">
+                    <a href="https://www.cognifyz.com/" target="_blank" class="title-link">Official Site</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Responsive Grid Layout</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./boot1.png" alt="Image 1" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Cognifyz Technologies</h5>
+                        <p class="card-text">Cognifyz Technologies is a technology company that provides software solutions for businesses</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./boot.avif" alt="Image 2" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Bootstrap</h5>
+                        <p class="card-text">Bootstrap is a free, open source front-end development framework for the creation of websites and web apps.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./boot2.jpg" alt="Image 3" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Cognifyz Technologies</h5>
+                        <p class="card-text">"Cognifyz is a data-driven technology firm that provides tailored training and development solutions</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
