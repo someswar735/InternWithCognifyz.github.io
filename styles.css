@@ -1,0 +1,129 @@
+/* Default Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links li:last-child {
+    margin-right: 0;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ff5733;
+}
+
+.menu-icon {
+    display: none; /* Hide the hamburger menu icon by default */
+    cursor: pointer;
+    font-size: 24px;
+    margin-left: 20px;
+}
+ /* Custom styles */
+ .custom-card {
+    max-width: 400px;
+    background: linear-gradient(45deg, #d09356, #bbc7e1);
+    transition: transform 0.3s; /* Add a transition effect */
+    margin: 0 auto; /* Center horizontally */
+    margin-top: 20px; /* Add top margin to center vertically */
+  }
+
+  .custom-card:hover {
+    transform: scale(1.05); /* Apply a scale effect on hover */
+  }
+
+  .custom-card img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  body {
+    /* Add a background gradient to the entire webpage */
+    background: linear-gradient(45deg, #352719, #bbc7e1);
+  }
+
+  .title-bar {
+    background-color: transparent; /* Remove background color from title bar */
+    padding: 30px 0;
+    text-align: center;
+  }
+
+  .title-link {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 100px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+
+  .title-link:hover {
+    color: #0d55f0;
+  }
+
+  /* Add custom styles for the footer button */
+  .footer-button {
+    text-align: center;
+    margin-top: 20px;
+  }
+/* Media Query for Smaller Screens (e.g., mobile devices) */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hide the navigation links */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex; /* Show the navigation links when the menu is active */
+    }
+
+    .nav-links li {
+        margin: 15px 0;
+    }
+
+    .menu-icon {
+        display: block; /* Show the hamburger menu icon */
+    }
+}
